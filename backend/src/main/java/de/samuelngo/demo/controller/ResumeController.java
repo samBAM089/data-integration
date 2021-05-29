@@ -7,6 +7,8 @@ import de.samuelngo.demo.service.ResumeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("api/resume")
 public class ResumeController {
@@ -21,6 +23,11 @@ public class ResumeController {
     @PostMapping
     public Resume addNewResume(@RequestBody ResumeDto dto){
         return resumeService.addResume(dto);
+    }
+
+    @GetMapping
+    public List<Resume> getAllResumes(){
+        return resumeService.listAllResume();
     }
 
 }
