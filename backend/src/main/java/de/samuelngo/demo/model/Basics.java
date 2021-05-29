@@ -1,4 +1,4 @@
-package model;
+package de.samuelngo.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,10 +9,14 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Builder
-public class PublicationItem {
+public class Basics {
+
+    private String id;
     private String name;
-    private String publisher;
-    private String releaseDate;
+    private String label;
+    private String picture;
+    private String email;
     private String website;
     private String summary;
+    private Location location;
 }

@@ -1,4 +1,4 @@
-package model;
+package de.samuelngo.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,15 +11,13 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Builder
-public class VolunteerItem {
-
-    private String organization;
-    private String position;
-    private String website;
+public class EducationItem {
+    private String institution;
+    private String area;
+    private String studyType;
     private String startDate;
     private String endDate;
-    private String summary;
-    private List<String> highlight;
-
+    private String gpa;
+    private List<String> courses;
 
 }

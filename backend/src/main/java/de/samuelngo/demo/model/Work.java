@@ -1,4 +1,4 @@
-package model;
+package de.samuelngo.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,6 +11,6 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Builder
-public class Awards {
-    private List<AwardItem> awards;
+public class Work {
+    private List<WorkItem> work;
 }

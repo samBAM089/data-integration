@@ -1,4 +1,4 @@
-package model;
+package de.samuelngo.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

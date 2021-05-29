@@ -1,4 +1,4 @@
-package model;
+package de.samuelngo.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Builder
-public class LanguageItem {
+public class PublicationItem {
     private String name;
-    private String fluency;
+    private String publisher;
+    private String releaseDate;
+    private String website;
+    private String summary;
 }

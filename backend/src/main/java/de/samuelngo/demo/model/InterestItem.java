@@ -1,5 +1,4 @@
-package model;
-
+package de.samuelngo.demo.model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,6 +10,7 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Builder
-public class Profiles {
-    private List<ProfileItem> profiles;
+public class InterestItem {
+    private String name;
+    private List<String> keywords;
 }

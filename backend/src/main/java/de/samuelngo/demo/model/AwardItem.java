@@ -1,16 +1,17 @@
-package model;
+package de.samuelngo.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
 @Builder
-public class Skills {
-    private List<SkillItem> skills;
+public class AwardItem {
+    private String title;
+    private String date;
+    private String awarder;
+    private String summary;
 }

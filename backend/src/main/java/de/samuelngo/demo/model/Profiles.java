@@ -1,4 +1,4 @@
-package model;
+package de.samuelngo.demo.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,9 +11,6 @@ import java.util.List;
 @NoArgsConstructor
 @Data
 @Builder
-public class SkillItem {
-    private String name;
-    private String level;
-    private List<String> keywords;
-
+public class Profiles {
+    private List<ProfileItem> profiles;
 }
