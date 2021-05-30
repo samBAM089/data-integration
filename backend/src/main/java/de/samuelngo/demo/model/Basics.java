@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class Basics {
 
-    private String id;
     private String name;
     private String label;
     private String picture;

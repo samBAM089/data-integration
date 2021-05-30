@@ -21,10 +21,10 @@ public class ResumeService {
         this.resumeFactory = resumeFactory;
     }
 
-    public Resume addResume(ResumeDto dto){
-        Resume newResume = resumeFactory.createResume(dto);
-        resumeDb.addResume(newResume);
-        return newResume;
+    public List<Resume> addResumes(List<ResumeDto> jobList){
+        List<Resume> resumeList = resumeFactory.createResumes(jobList);
+        resumeDb.addResumes(resumeList);
+        return resumeList;
     }
 
     public List<Resume> listAllResume(){

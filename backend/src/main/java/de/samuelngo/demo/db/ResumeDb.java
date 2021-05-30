@@ -19,8 +19,10 @@ public class ResumeDb {
         return resumeList;
     }
 
-    public Resume addResume(Resume newResume){
-        resumeList.add(newResume);
-        return newResume;
+    public List<Resume> addResumes(List<Resume> newResumes){
+        for (Resume newResume : newResumes) {
+            resumeList.add(newResume);
+        }
+        return resumeList;
     }
 }

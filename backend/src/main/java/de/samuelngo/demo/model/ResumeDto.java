@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ResumeDto {
 
-    private String guid;
     private String link;
     private String author;
     private String category1;
