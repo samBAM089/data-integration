@@ -23,12 +23,7 @@ public class ResumeFactory {
                     .startDate(dto.getPubDate())
                     .endDate(dto.getUpdated())
                     .summary(dto.getDescription())
-                    .highlights(List.of(
-                            dto.getCategory1(),
-                            dto.getCategory2(),
-                            dto.getCategory3(),
-                            dto.getCategory4(),
-                            dto.getCategory5()))
+                    .highlights(dto.getCategories())
                     .build();
 
             Resume newResume = Resume.builder()

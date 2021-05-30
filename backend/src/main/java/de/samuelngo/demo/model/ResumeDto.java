@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -13,11 +15,7 @@ public class ResumeDto {
 
     private String link;
     private String author;
-    private String category1;
-    private String category2;
-    private String category3;
-    private String category4;
-    private String category5;
+    private List<String> categories;
     private String title;
     private String description;
     private String pubDate;
